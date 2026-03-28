@@ -6,9 +6,9 @@ def calculate_fine(book_title, days_overdue, daily_rate=5.0, max_fine=150.0):
     return fine_amount
 
 def start():
-    title = input().strip()
-    days = int(input().strip())
-    rate = float(input().strip())
+    title = input()
+    days = int(input())
+    rate = float(input())
     calculate_fine(title, days, daily_rate=rate)
 
 start()
